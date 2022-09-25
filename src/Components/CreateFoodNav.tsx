@@ -2,7 +2,9 @@ import React from 'react'
 
 function CreateFoodNav() {
   return (
-    <div>CreateFoodNav</div>
+    <button className='create__submit' type='submit'>
+        Create
+    </button>
   )
 }
 
