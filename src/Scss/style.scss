@@ -64,7 +64,7 @@ body {
     border-radius: 50px;
     border: none;
     font-size: 15px;
-    background-color: #533A71;
+    background-color: #8CC7A1;
     color:  white;
     transition: 0.2s all;
     box-shadow: 0 0 10px black;
@@ -81,7 +81,33 @@ body {
     box-shadow: 0 0 4px black;
 }
 
+.login_signup_button {
+    margin: 12px;
+    padding: 20px 30px;
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    background-color: #FF595E;
+    color:  white;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px black;
+    float: right;
+}
+
+.login_signup_button:hover {
+    background-color: black;
+}
+
+.login_signup_button:active {
+    transform: scale(0.9);
+    box-shadow: 0 0 4px black;
+}
+
 .banner_img {
+    width: 100%;
+}
+
+.banner_sub_img {
     width: 100%;
 }
 

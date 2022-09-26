@@ -2,7 +2,7 @@ import React from 'react'
 
 function LoginSignup() {
   return (
-    <div>LoginSignup</div>
+    <button className='login_signup_button'>Login or Sign Up</button>
   )
 }
 
