@@ -1,8 +1,15 @@
 import React from 'react'
+import Navbar from '../Navbar/Navbar'
+import PrimaryHeader from './PrimaryHeader'
+import Footer from '../Footer/Footer'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <Navbar/>
+      <PrimaryHeader/>
+      <Footer/>
+    </div>
   )
 }
 
