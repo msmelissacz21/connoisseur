@@ -155,7 +155,7 @@ body {
 }
 
 .nav-container {
-  max-width: $content-width;
+//   max-width: $content-width;  get rid of this later - or not
   margin: 0 auto;
 }
 
@@ -315,3 +315,15 @@ nav {
     display: block !important;
   }
 }
+
+// Footer CSS
+
+// .footer{ ----------------- use potentially for sticky footer
+//     margin-top: 1rem;
+//     padding: 1rem;
+//     background-color:#EBF5EE;
+//     position: fixed;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//   }
