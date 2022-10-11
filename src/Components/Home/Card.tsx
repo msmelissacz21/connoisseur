@@ -15,6 +15,7 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
+
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
 }
@@ -74,6 +75,12 @@ export default function RecipeReviewCard() {
         <IconButton aria-label="share">
           <ShareIcon />
         </IconButton>
+          
+{/* ------------------------------------------------------------------------------------------ */}
+{/* Add Rating Here */}
+
+{/* --------------------------------------------------------------------------------------- */}
+
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}

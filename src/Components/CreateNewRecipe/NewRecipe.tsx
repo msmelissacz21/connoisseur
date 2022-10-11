@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer'
 
 function NewRecipe() {
   return (
-    <div>
+    <div className='new_recipe_div'>
       <Navbar/>
       <form className='new_recipe_form'>
         <label className='new_recipe_label'>
