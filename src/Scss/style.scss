@@ -117,21 +117,6 @@
     align-items: center
 }
 
-.new_recipe_label {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    text-align: right;
-    width: 400px;
-    line-height: 26px;
-    margin-bottom: 10px;
-}
-  
-.new_recipe_input {
-    height: 20px;
-    flex: 0 0 200px;
-    margin-left: 10px;
-}
 
 // Navbar SCSS ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -367,4 +352,50 @@ nav {
     justify-content: space-between;
     height: 100vh;
 
+}
+
+
+// New Reicpe Form CSS ------------------------------------------------------------------------------------------------------
+
+.new_recipe_form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50vh;
+    margin-left: 2em;
+    margin-top: 3em;
+    // align-content: flex-end;
+}
+
+.new_recipe_label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    white-space:nowrap;
+}
+  
+.new_recipe_input {
+    margin-left: 10px;
+    width: auto;
+    max-width: 30vw;
+}
+
+.new_recipe_submit_button {
+    max-width: 10vw;
+    align-self: auto;
+    margin-left: 15em;
+}
+
+
+.recipe-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .MuiCard-root {
+        margin: 1em;
+    }
 }

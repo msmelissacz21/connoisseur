@@ -7,6 +7,7 @@ import './Scss/style.scss';
 import { Route, Routes } from 'react-router-dom';
 import NewRecipe from './Components/CreateNewRecipe/NewRecipe'
 import Home from './Components/Home/Home'
+import About from './Components/About/About'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <Routes>
       <Route path ='/' element={<Home />} />
       <Route path='/newrecipe' element={<NewRecipe />} />
+      <Route path = '/about' element={<About />} />
     </Routes>
   );
 }
