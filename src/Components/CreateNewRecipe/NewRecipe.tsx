@@ -5,38 +5,35 @@ import Footer from '../Footer/Footer'
 
 function NewRecipe() {
 
-  function handleSubmit(event: any) {
+  const handleSubmit = (event: any) =>{
+    event.preventDefault()
     let name: string = event.target[0].value;
 
     let hyphenNameID = name.replace(/\s+/g, '-').toLowerCase();
-
-    let content = event.target[2] + "$instructions$" + event.target[3]
+    let userId = localStorage.getItem('user_id')
+    let content = event.target[2].value + "$instructions$" + event.target[3].value
     let recipe = {
-      id: 'msmelissacz21@gmail.com_'+hyphenNameID,
-      userID: 'msmelissacz21@gmail.com',
+      id: userId+'_'+hyphenNameID,
+      userID: userId,
       name: name,
       image: event.target[1].value,
       content: content
     }
 
     let body= JSON.stringify(recipe)
-
-    fetch('https://kadmdsrtbiqlrq6v6tpcb4jlsy0ztkju.lambda-url.us-east-2.on.aws/recipes', {
+    function send_recipe_data(body: string) {
+      fetch('https://kadmdsrtbiqlrq6v6tpcb4jlsy0ztkju.lambda-url.us-east-2.on.aws/recipes', {
         method: 'POST',
+        mode:'no-cors',
+        credentials: 'include',
         body: body,
-        headers: {
-          'Content-type': 'application/json;',
-        },
-        mode: 'no-cors'
       }).then(
-      (res)=>{
-        alert(res)
-      },
-      (err)=>{
-        alert(err)
-      }
-    )
-
+        (resp) => {
+          console.log(resp)
+        }
+      )
+    }
+     send_recipe_data(body) 
   }
 
 

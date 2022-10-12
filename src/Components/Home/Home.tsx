@@ -14,13 +14,13 @@ function Home() {
       (resp) => {
         resp.json().then(
           (data) => {
-            console.log(data)
+            localStorage.setItem('user_id', data.user_id)
           }
         )
       }
     )
   }
-  
+
   if(recipes == null) {
     fetch('https://kadmdsrtbiqlrq6v6tpcb4jlsy0ztkju.lambda-url.us-east-2.on.aws/all-recipes').then(
       (resp) => {
