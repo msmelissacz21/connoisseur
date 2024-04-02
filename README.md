@@ -1,4 +1,4 @@
-# Connisseur - all things food
+# Connoisseur - all things food
 
 ## Background
 The inspiration for this application came from the painful experience of navigating a variety of the most common recipe websites.  I wanted a simple app with recipe instructions, information, and rating system without having to read someone's life story or scroll through enormous ads.
